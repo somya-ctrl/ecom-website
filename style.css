@@ -106,3 +106,116 @@ body{
         align-items: flex-start;
       }
 }
+.hero-sec{
+     background-image: url("gomart_hero.png");
+     height: 350px;             
+    width: 100%;                
+    background-size: cover;     
+    background-position: center;
+     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero-msg{
+    color:black;
+    background-color:#94e1b4;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:0.85rem;
+    width:100%;
+}
+.box{
+    
+    width:23%;
+    background-color:rgb(197, 165, 170);
+    padding:20px 0px 15px;
+    margin-top: 15px;
+    
+}
+.shop-section{
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   background-color: #d7f9f8;
+}
+.box-img{
+    height:377px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-size:cover;
+}
+.box-content{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+footer{
+      
+      background: #222;
+      color: #fff;
+      padding:40px 20px;
+      margin-top: 30px;
+      width:100%;
+      text-align: center;
+    }
+.footer-logo h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #00c853;
+}
+
+    .footer-links h3,
+    .footer-contact h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #00c853;
+    }
+
+    .footer-links ul {
+      list-style: none;
+    }
+
+    .footer-links ul li {
+      margin: 8px 0;
+    }
+
+    .footer-links ul li a {
+      color: #bbb;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .footer-links ul li a:hover {
+      color: #fff;
+    }
+
+    .footer-contact p {
+      margin: 6px 0;
+      color: #bbb;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: #bbb;
+      font-size: 20px;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #bbb;
+      border-top: 1px solid #444;
+      padding-top: 15px;
+    }
+
+
+  
