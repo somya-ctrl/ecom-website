@@ -65,13 +65,13 @@ body{
 .search-container button:hover {
     background-color: #219150;
 }
-.nav-links {
+.navbar-links {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 25px;
 }
-.nav-links li a {
+.navbar-links li a {
     text-decoration: none;
     color: #333;
     font-size: 16px;
@@ -80,36 +80,17 @@ body{
     gap: 6px;
     transition: color 0.3s ease;
 }
-.nav-links li a:hover {
+.navbar-links li a:hover {
     color: #27ae60;
 }
-.nav-links li a i {
+.navbar-links li a i {
     color: #27ae60;
 }
-@media (max-width: 900px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    .search-container {
-        width: 100%;
-        margin: 10px 0;
-        justify-content: flex-start;
-      }
-    .search-container input {
-        width: 70%;
-      }
-    .nav-links {
-        flex-direction: column;
-        gap: 15px;
-        margin-top: 10px;
-        align-items: flex-start;
-      }
-}
+
 .hero-sec{
      background-image: url("gomart_hero.png");
-     height: 350px;             
-    width: 100%;                
+    height:350px;             
+    width: 100%;
     background-size: cover;     
     background-position: center;
      background-repeat: no-repeat;
@@ -119,7 +100,7 @@ body{
 }
 .hero-msg{
     color:black;
-    background-color:#94e1b4;
+    background-color:rgba(148, 225, 180, 0.9);
     height:40px;
     display: flex;
     align-items: center;
@@ -137,7 +118,7 @@ body{
 }
 .shop-section{
    display:flex;
-   flex-wrap: wrap;
+   flex-wrap:wrap;
    justify-content: space-evenly;
    background-color: #d7f9f8;
 }
@@ -148,7 +129,7 @@ body{
     align-items: center;
     background-size:cover;
 }
-.box-content{
+.content{
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -167,28 +148,28 @@ footer{
     color: #00c853;
 }
 
-    .footer-links h3,
+    .links h3,
     .footer-contact h3 {
       margin-bottom: 10px;
       font-size: 18px;
       color: #00c853;
     }
 
-    .footer-links ul {
+    .links ul {
       list-style: none;
     }
 
-    .footer-links ul li {
+    .links ul li {
       margin: 8px 0;
     }
 
-    .footer-links ul li a {
+    .links ul li a {
       color: #bbb;
       text-decoration: none;
       transition: 0.3s;
     }
 
-    .footer-links ul li a:hover {
+    .links ul li a:hover {
       color: #fff;
     }
 
@@ -197,14 +178,14 @@ footer{
       color: #bbb;
     }
 
-    .social-icons a {
+    .icons a {
       margin: 0 10px;
       color: #bbb;
       font-size: 20px;
       transition: 0.3s;
     }
 
-    .social-icons a:hover {
+    .icons a:hover {
       color: #fff;
     }
 
@@ -216,6 +197,27 @@ footer{
       border-top: 1px solid #444;
       padding-top: 15px;
     }
+
+
+
+@media (max-width: 600px) {
+  .box {
+    width: 100%; 
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .search-container {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
 
 
   
