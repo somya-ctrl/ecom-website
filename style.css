@@ -65,6 +65,15 @@ body{
 .search-container button:hover {
     background-color: #219150;
 }
+.menu-toggle {
+  display: none;
+}
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #27ae60;
+}
 .navbar-links {
     list-style: none;
     display: flex;
@@ -88,15 +97,16 @@ body{
 }
 
 .hero-sec{
-     background-image: url("gomart_hero.png");
+    background-image: url("hero_image.png");
     height:70vh;             
     width: 100%;
     background-size: cover;     
     background-position: center;
-     background-repeat: no-repeat;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    
 }
 .hero-msg{
     color:black;
@@ -107,7 +117,10 @@ body{
     justify-content: center;
     font-size:0.85rem;
     width:100%;
+    text-align: center;
 }
+
+
 .box{
     
     width:23%;
@@ -156,6 +169,7 @@ footer{
     max-width: 1200px;
     margin: auto; 
     gap: 30px;
+    
 }
 
 .footer-section {
@@ -242,14 +256,55 @@ footer{
     margin: 10px 0;
   }
   .navbar-links {
+    
     flex-direction: column;
     gap: 10px;
     align-items: flex-start;
   }
-  .hero-sec{
+ 
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+   .menu-toggle:checked ~ .navbar-links {
+    display: flex;
+  }
+  .navbar-links {
+    display: none; /* hide by default */
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+  }
+   .hero-sec{
     height:40vh;
   }
+   .hero-btn {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+  }
 }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo p {
+    max-width: 100%;
+  }
+
+  .links ul {
+    padding: 0;
+  }
+
+  .icons {
+    margin-top: 10px;
+  }
+}
+
 
 
   
