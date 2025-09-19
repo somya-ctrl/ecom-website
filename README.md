@@ -25,14 +25,15 @@ Copyright Notice
 
 Clone the repository or download the files:
 
-git clone https://github.com/your-username/gomart.git
+git clone https://github.com/somya-ctrl/ecom-website.git
 
 
 Open the project folder and locate index.html.
 
 Run the file in a browser (double click or use Live Server in VS Code).
+
 👨‍💻 Author
 
-Your Name
+Somya Agarwal
 
 GitHub: somya-ctrl
