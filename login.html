@@ -4,6 +4,91 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login | GoMart</title>
+  <style>
+    #login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  flex-direction: column;
+  background: linear-gradient(135deg, #27ae60, #00c853); 
+  padding: 20px;
+}
+
+#login-page h2 {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+#login-page form {
+  background: rgba(255, 255, 255, 0.95); 
+  padding: 35px 30px;
+  border-radius: 12px;
+  max-width: 380px;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(8px);
+}
+
+#login-page input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  background: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+#login-page input:focus {
+  border-color: #27ae60;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(39,174,96,0.3); 
+  outline: none;
+}
+
+#login-page button {
+  width: 100%;
+  background: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#login-page button:hover {
+  background: #219150;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+#login-page .extra-links {
+  margin-top: 15px;
+  text-align: center;
+}
+
+#login-page .extra-links a {
+  color: #27ae60;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+#login-page .extra-links a:hover {
+  color: #219150;
+}
+  </style>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
