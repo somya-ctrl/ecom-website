@@ -22,15 +22,18 @@
     <i class="fa-solid fa-bars"></i>
   </label>
     <ul class="navbar-links">
-      <li><a href="#"><i class="fa-solid fa-circle-info"></i> About</a></li>
-      <li><a href="#"><i class="fa-solid fa-phone"></i> Contact</a></li>
-      <li><a href="#"><i class="fa-solid fa-cart-plus"></i> Cart</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+
     </ul>
   </nav>
-  <div class="hero-sec">
-    <div class="hero-msg">
-      
-      <p>You are on GoMart.com.</p>
+  <main>
+    <section id="home" class="page active">
+      <div class="hero-sec">
+        <div class="hero-msg">
+          <p>You are on GoMart.com.</p>
       
     </div>
   </div>
@@ -39,51 +42,61 @@
       <div class="content">
       <h3> Deals on skincare</h3>
       <div class="box-img" style="background-image: url(https://i.guim.co.uk/img/media/4d6586f43fd33cf687947e6d6f19050a3ed836da/0_0_3333_2000/master/3333.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=d030cfc9a443678e888a1fb95a2055b0)"></div>
- 
+      <a href="login.html" class="shop-now">Shop Now</a>
     </div>
     </div>
     <div class="box2 box">
       <div class="content">
       <h3> Fresh vegetables</h3>
       <div class="box-img" style="background-image: url(https://images.creativemarket.com/0.1.0/ps/7401207/1820/1213/m1/fpnw/wm1/d5lfj1c6wuoutyl4gjlc8ysrzsfhfacvqngp2o6zlzhdwpvp7eltbrfufklni89w-.jpg?1575308852&s=cc85659dea22397c43283e3e8099cd99)"></div>
-  </div>
+      <a href="login.html" class="shop-now">Shop Now</a>  
+    </div>
   </div>
     <div class="box3 box">
       <div class="content">
         <h3> Clothes</h3>
         <div class="box-img" style="background-image: url(https://moneyinc.com/wp-content/uploads/2022/04/shutterstock_589577570-750x521.jpg);"></div>
+         <a href="login.html" class="shop-now">Shop Now</a>
       </div>
     </div>
     <div class="box4 box">
       <div class="content">
         <h3>Electronics</h3>
         <div class="box-img" style="background-image: url(https://jooinn.com/images/electronic-device-1.jpg);"></div>
+        <a href="login.html" class="shop-now">Shop Now</a>
       </div>
     </div>
       <div class="box5 box">
       <div class="content">
         <h3> Footwear</h3>
         <div class="box-img" style="background-image: url(https://tse4.mm.bing.net/th/id/OIP.RIolW7dr85CgZF0qnrZ7YQAAAA?rs=1&pid=ImgDetMain&o=7&rm=3);"></div>
+        <a href="login.html" class="shop-now">Shop Now</a>
       </div>
     </div>
     <div class="box6  box">
       <div class="content">
         <h3> For women</h3>
         <div class="box-img" style="background-image: url(https://img.freepik.com/premium-photo/photographs-fashion-accessories_883586-41792.jpg);"></div>
+        <a href="login.html" class="shop-now">Shop Now</a>
       </div>
       </div>
      <div class="box7 box">
       <div class="content">
         <h3>Toys</h3>
         <div class="box-img" style="background-image: url(https://m.media-amazon.com/images/I/71bW5gqP-kL._SL1500_.jpg);"></div>
+      <a href="login.html" class="shop-now">Shop Now</a>
       </div>
     </div>
       <div class="box8 box">
       <div class="content">
         <h3> For pets</h3>
         <div class="box-img" style="background-image: url(https://tse1.mm.bing.net/th/id/OIP.MeSKLR-qOqZXXdb4uyRxeQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3);"></div>
+        <a href="login.html" class="shop-now">Shop Now</a>
       </div>
     </div>
+  </section>
+   
+  </main>
     
     <footer>
      
@@ -126,10 +139,17 @@
   
 
     </footer>
-
+ <script>
+    function showPage(pageId) {
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(page => page.classList.remove('active')); 
+      document.getElementById(pageId).classList.add('active');
+    }
+  </script>
     
 
           
        
 </body>
+
 </html>
